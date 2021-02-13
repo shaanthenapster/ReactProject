@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React , { Component } from 'react';
+import RawLand from './RawLand/RawLand';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div className="App">
+        <h1>This is my 1st component implementation.</h1>
+        <p> When you implement someting , you need to code it properly.</p>
+        <RawLand name = "Dhaulas" location = "Dehradun"/>
+        <RawLand name = "Phulwari" location = "Patna"/>
+        <RawLand name = "Ghaziabad" location = "NCR"/>
+        <RawLand name = "Ghitorni" location = "UttarPradesh"/>
+      </div>
+    );
+
+    // return React.createElement('div' , {className: 'App'} , 
+    // React.createElement('h1' ,null, 'Hi i\'m from the react create element'));
+  }
 }
 
 export default App;
