@@ -1,6 +1,9 @@
 {
   "name": "karma",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "engines": {
+    "node": "18.x"
+  }
   "private": true,
   "proxy": "http://localhost:8080",
   "dependencies": {
